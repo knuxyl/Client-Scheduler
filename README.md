@@ -13,7 +13,7 @@ JavaFX 17.0.2
 MySQL Connector/J 8.0.25
 
 <p align="center">
-<img src="main.png" width="300" />
+<img src="login.png" width="300" />
 </p>
 <p align="center">
 <img src="customers.png" width="300" />
