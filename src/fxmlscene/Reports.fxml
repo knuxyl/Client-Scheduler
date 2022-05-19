@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="480.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlcontroller.controllerReports">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Reports" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="linkAppointments" layoutX="15.0" layoutY="74.0" onAction="#linkAppointments" style="-fx-background-color: #666666; -fx-underline: false; -fx-focus-color: transparent; -fx-background-radius: 8 8 0 0;" text="Appointments" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="linkSchedule" layoutX="139.0" layoutY="74.0" onAction="#linkSchedule" style="-fx-background-color: #333333; -fx-underline: false; -fx-focus-color: transparent; -fx-background-radius: 8 8 0 0;" text="Schedule" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <AnchorPane fx:id="anchorAppointments" layoutX="15.0" layoutY="109.0" maxHeight="476.0" maxWidth="447.0" minHeight="470.0" minWidth="435.0" prefHeight="476.0" prefWidth="447.0" style="-fx-background-color: #666666, #202020; -fx-background-insets: 0, 2; -fx-background-radius: 0 8 8 8;" visible="false">
+         <children>
+            <Label fx:id="labelAppointmentMessage" alignment="CENTER_RIGHT" layoutY="312.0" prefWidth="586.0" textFill="WHITE" />
+            <TextArea fx:id="textAppointments" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="450.0" prefWidth="419.0" style="-fx-control-inner-background: #333333; -fx-text-fill: white; -fx-background-radius: 4;" />
+         </children>
+      </AnchorPane>
+      <Hyperlink fx:id="linkLocation" layoutX="222.0" layoutY="74.0" onAction="#linkLocation" style="-fx-background-color: #333333; -fx-underline: false; -fx-focus-color: transparent; -fx-background-radius: 8 8 0 0;" text="Location" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="linkRefresh" layoutX="414.0" layoutY="80.0" onAction="#linkRefresh" style="-fx-underline: false; -fx-focus-color: transparent;" text="Refresh" textFill="#0096c9" />
+      <AnchorPane fx:id="anchorSchedule" layoutX="15.0" layoutY="109.0" maxHeight="476.0" maxWidth="447.0" minHeight="470.0" minWidth="435.0" prefHeight="476.0" prefWidth="447.0" style="-fx-background-color: #666666, #202020; -fx-background-insets: 0, 2; -fx-background-radius: 0 8 8 8;" visible="false">
+         <children>
+            <Label fx:id="labelAppointmentMessage1" alignment="CENTER_RIGHT" layoutY="312.0" prefWidth="586.0" textFill="WHITE" />
+            <TextArea fx:id="textSchedule" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="450.0" prefWidth="419.0" style="-fx-control-inner-background: #333333; -fx-text-fill: white; -fx-background-radius: 4;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorLocation" layoutX="15.0" layoutY="109.0" maxHeight="476.0" maxWidth="447.0" minHeight="470.0" minWidth="435.0" prefHeight="476.0" prefWidth="447.0" style="-fx-background-color: #666666, #202020; -fx-background-insets: 0, 2; -fx-background-radius: 0 8 8 8;">
+         <children>
+            <Label fx:id="labelAppointmentMessage11" alignment="CENTER_RIGHT" layoutY="312.0" prefWidth="586.0" textFill="WHITE" />
+            <TextArea fx:id="textLocation" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="450.0" prefWidth="419.0" style="-fx-control-inner-background: #333333; -fx-text-fill: white; -fx-background-radius: 4;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
